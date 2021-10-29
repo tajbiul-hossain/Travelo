@@ -1,0 +1,54 @@
+.dentist-card {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 100%;
+  color: #00aeff;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+.dentist-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.dentist-card img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.dentist-card figcaption {
+  position: absolute;
+  top: calc(77%);
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 15px 25px 65px;
+}
+.dentist-card figcaption:before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.dentist-card h3,
+.dentist-card p {
+  margin: 0 0 10px;
+}
+.dentist-card h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.dentist-card p {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}

@@ -1,0 +1,40 @@
+form .form-control {
+  width: 25rem;
+  border: 1px solid #00aeff;
+}
+
+form .form-control:focus {
+  box-shadow: none;
+}
+
+form .input-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #00aeff;
+}
+
+.form-card {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-card {
+    width: 90%;
+  }
+  form .form-control {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .form-card {
+    width: 100%;
+  }
+  form .form-control {
+    width: 100%;
+  }
+}

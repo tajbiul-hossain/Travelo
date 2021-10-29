@@ -1,0 +1,92 @@
+.bg-gradient-overlay {
+  position: relative;
+}
+.bg-gradient-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #2c455d;
+  background: -webkit-linear-gradient(to right, #2c455d, #00012c);
+  background: linear-gradient(to right, #2c455d, #00012c);
+  opacity: 0.85;
+}
+.carousel-image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.caption {
+  top: 30%;
+  z-index: 2;
+  color: #fff;
+}
+
+.carousel-title {
+  font-size: 3.7rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.carousel-text {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.caption .default-btn {
+  min-width: 120px;
+  height: 46px;
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #00aeef;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  border: 2px solid #00aeef;
+}
+
+.caption .default-btn:hover,
+.caption .default-btn:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #00aeef;
+}
+
+@media only screen and (max-width: 767px) {
+  .caption {
+    top: 30%;
+  }
+  .carousel-title {
+    font-size: 1.8rem;
+  }
+  .carousel-text {
+    font-size: 1rem;
+  }
+
+  .default-btn {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .caption {
+    top: 15%;
+  }
+  .carousel-title {
+    font-size: 1.8rem;
+  }
+  .carousel-text {
+    font-size: 1rem;
+  }
+  .default-btn {
+    margin-bottom: 1rem;
+  }
+}

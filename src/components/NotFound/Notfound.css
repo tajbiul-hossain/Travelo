@@ -1,0 +1,27 @@
+.error-page {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  height: 80vh;
+  position: relative;
+}
+
+.error-code {
+  color: var(--primary-color);
+  font-size: 7rem;
+  letter-spacing: 1rem;
+}
+
+.error-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--primary-color),
+    inset 3.5em 0 0 0 var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
+}

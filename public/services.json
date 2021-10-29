@@ -1,0 +1,50 @@
+[
+  {
+    "id": "SERVICE1",
+    "name": "Replace Missing Teeth",
+    "shortDesc": "Regardless of the way a tooth is lost, it can negatively impact the alignment of your teeth over time and cause a number of problems down the road if it isn’t replaced.",
+    "details": "A missing tooth can certainly change the appearance of your smile. Whether a missing tooth is the result of gum disease, injury, severe tooth decay, or a genetic condition, a missing tooth can cause several problems.Regardless of the way a tooth is lost, it can negatively impact the alignment of your teeth over time and cause a number of problems down the road if it isn’t replaced. Sometimes the value of your teeth isn’t realized until they are lost, and unfortunately, teeth do not last forever. Even the loss of a single tooth can have a negative impact on your oral health and confidence.A missing tooth or teeth can also affect your speech, ability to chew your food, the integrity of your jawbone, and cause the slow shifting of your teeth into some of the empty spaces.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service1.jpg",
+    "price": 115
+  },
+  {
+    "id": "SERVICE2",
+    "name": "Covering Recession",
+    "shortDesc": "If the recession is severe and causing symptoms, such as tooth sensitivity, pain, or infection, then various treatments are available. These include deep cleaning, medicating infections, and tissue grafts.",
+    "details": "Gums can become pushed back or wear away and expose the pink tissue that covers the roots of the teeth. Gums might also recede around a tooth if it is in an abnormal position. Receding gums becomes a health concern when the roots of the teeth become exposed, leaving the teeth at risk of decay, infection, and loss. If people start treatment at an early stage, they can stop or reverse the process of gum recession. If the recession is severe and causing symptoms, such as tooth sensitivity, pain, or infection, then various treatments are available. These include deep cleaning, medicating infections, and tissue grafts. Receding gums is a common condition, but people often do not realize their gums are receding until a late stage in the process.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service2.jpg",
+    "price": 200
+  },
+  {
+    "id": "SERVICE3",
+    "name": "Cosmetic Dentistry",
+    "shortDesc": "If you’re not satisfied with your smile, modern cosmetic dentistry can help. This method of professional oral care focuses on improving the appearance of your mouth, teeth and overall smile.",
+    "details": "If you’re not satisfied with your smile, modern cosmetic dentistry can help. This method of professional oral care focuses on improving the appearance of your mouth, teeth, gums, and overall smile. Common procedures include teeth whitening, veneers, fillings, and implants. Cosmetic dentistry is becoming more and more popular, with the industry as a whole projected to reach $32 billion by 2026. Although it’s not an essential procedure, cosmetic treatment can restore confidence in your smile.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service3.jpg",
+    "price": 150
+  },
+  {
+    "id": "SERVICE4",
+    "name": "Dental Check Up",
+    "shortDesc": "A regular dental check up is important because they help keep your teeth and gums healthy. You should have a regular dental visit at least every 6 months or as recommended by your dental professional.",
+    "details": "There are 2 parts to a regular dental visit – check up, or examination and the cleaning, or oral prophylaxis. At the dental check up your dental professional will check for cavities. X-rays might be taken to detect cavities between your teeth. The exam will also include a check for plaque and tartar on your teeth. Plaque is a clear, sticky layer of bacteria. If it is not removed, it can harden and become tartar. You cannot remove tartar with brushing and flossing. If plaque and tartar build up on your teeth, they can cause oral diseases. Next, your gums will be checked. This will be done with a special tool to measure the depth of the spaces between your teeth and gums. With healthy gums, the spaces are shallow. When people have gum disease, the spaces may become deeper. The check-up should also include a careful examination of your tongue, throat, face, head, and neck. This is to look for any signs of trouble - swelling, redness, or possible signs of cancer.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service4.jpg",
+    "price": 100
+  },
+  {
+    "id": "SERVICE5",
+    "name": "Dental Implants",
+    "shortDesc": "Dental implants are an excellent solution for the replacement of your missing teeth. Implants look and feel just like your own natural teeth and have been performed successfully for decades.",
+    "details": "Have you lost a tooth to decay, injury or gum disease? Dental implants are an excellent solution for the replacement of your missing teeth. Implants look and feel just like your own natural teeth and have been performed successfully for decades. Teeth implants are placed in stages. First the base of the implant, the titanium post, is placed via a dental implant surgery. Titanium is most often used for various implants because it is compatible with your body. Once the implant surgery takes place the implant is left to heal and fuse with your bone – this process is referred to as osseointegration. This takes place over a period of several months and creates a strong bond for the base of your implants. At this point, abutments are secured to the posts of your implants which will serve as connectors between the implants and the crowns. Crowns are the only portion of implants that are visible. Abutments make dental crowns appear as if they rise up from the gum line, just like your natural teeth. To place implants successfully, there must be enough density in the jawbone. During your initial implant consultation the doctor will assess if you have enough density in your jaw bone for dental implants to be successful. If not, then bone grafting may be needed to prepare you for implant surgery. Dental implant placement is a short surgical procedure that lasts approximately 20 to 30 minutes in most cases. Doctors provide local anesthetic in the most gentle way possible so that there is no discomfort during the treatment. In some cases our patients also request a stronger form of sedation for the implant surgery. Patients usually take a general pain relief medication such as Advil or Tylenol Extra Strength regularly every 6 hours after treatment.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service5.jpg",
+    "price": 240
+  },
+  {
+    "id": "SERVICE6",
+    "name": "Remove Crown",
+    "shortDesc": "Dental crowns are often used to improve the strength and appearance of natural teeth. Think of a crown as a cap for your tooth that is made to look like and extend the life of your real tooth.",
+    "details": "Temporary crowns are used for appearance – to fill the holes in a smile while the final permanent work is still being completed. Rather than being made with metals or durable porcelain, they are often made using resin composites or acrylic. They look great and help to protect the site being prepared for final restoration. Temporary crowns are not meant to withstand more than a few months at most. Specific bonding agents, for example softer cements, are used for easy removal in the near-term future. Permanent, or 'definitive' crowns are bonded to the tooth or implant using dental cement. These crowns are made with porcelain or metal alloys that are designed to last long-term. The process of removing a permanent crown is a more challenging and involved procedure than removing a temporary crown. Crowns are an option for fixing teeth that have been weakened by decay or small fractures. They are also used for appearance purposes such as restoring misshapen, discolored and broken teeth. The final and permanent tooth that is placed on a dental implant is also called a crown. Sometimes crowns are used to cap a tooth after it has undergone endodontic treatment (a root canal). (See our blog: “Are root canals a good potion for dental treatment” here!) This practice was more widely used in the past. Today, experience and literature reveals that other routine restorations, i.e. fillings, are – in most cases – as effective for restoring root canals as crowns. Each situation has its own requirements and limitations. In general crowns aren’t necessary to restore root canals until the surface area of the access cavity is greater than one third of the occlusal surface (the surface of the teeth that we bite on) of the tooth.",
+    "img": "https://raw.githubusercontent.com/tajbiul-hossain/dental-depot-images/main/images/services/service6.jpg",
+    "price": 175
+  }
+]

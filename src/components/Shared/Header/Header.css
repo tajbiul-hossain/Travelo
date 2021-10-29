@@ -1,0 +1,54 @@
+.navbar-light .navbar-brand {
+  color: #00aeef !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: #000;
+  padding: 0 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+  color: #00aeef;
+}
+
+.navbar .register-btn {
+  color: #fff;
+}
+.navbar .navbar-collapse {
+  justify-content: end;
+}
+
+.navbar .register-btn:hover,
+.navbar .register-btn:focus {
+  color: #00aeff;
+}
+
+.navbar .username {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar .username:hover,
+.navbar .username:focus {
+  color: #000;
+}
+
+.navbar .user-image {
+  height: 3rem;
+  border-radius: 50%;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar .navbar-collapse {
+    text-align: start;
+  }
+  .navbar .nav-link {
+    padding: 0;
+  }
+}
