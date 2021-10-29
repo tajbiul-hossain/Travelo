@@ -4,56 +4,55 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <>
-      <Carousel id="home">
-        <Carousel.Item className="bg-gradient-overlay">
+      <Carousel fade>
+        <Carousel.Item className="bg-overlay" interval={3000}>
           <img
             className="d-block carousel-image"
-            src="https://github.com/tajbiul-hossain/dental-depot-images/blob/main/images/banner/banner1.jpg?raw=true"
-            alt="First slide"
+            src="https://i.ibb.co/BZ3wjD1/banner1.webp"
+            alt="banner1"
           />
-          <Carousel.Caption className="caption font-link">
-            <h3 className="carousel-title">
-              Welcome to <span style={{ color: "#00aeef" }}>Dental Depot</span>
-            </h3>
-            <p className="carousel-text">
-              Contact us to find out what we have to offer you.
+          <Carousel.Caption className="caption ">
+            <h3 className="carousel-title">Switzerland</h3>
+            <p className="carousel-text mt-5">
+              Switzerland is a mountainous Central European country, home to
+              numerous lakes, villages and the high peaks of the Alps
             </p>
-            <button className="btn default-btn me-md-3">Get Started</button>
+            <button className="btn default-btn me-md-3">Explore now</button>
             <button className="btn default-btn">Contact Us</button>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="bg-gradient-overlay">
+        <Carousel.Item className="bg-overlay" interval={3000}>
           <img
             className="d-block carousel-image"
-            src="https://github.com/tajbiul-hossain/dental-depot-images/blob/main/images/banner/banner2.jpg?raw=true"
-            alt="Second slide"
+            src="https://i.ibb.co/dcwSY6h/banner2.webp"
+            alt="banner2"
           />
 
-          <Carousel.Caption className="caption font-link">
-            <h3 className="carousel-title">Meet your new dentist</h3>
-            <p className="carousel-text">
-              We've created an innovative environment where art, culture, music
-              and community meet a passionate and visionary dentist.
+          <Carousel.Caption className="caption ">
+            <h3 className="carousel-title">Maldives</h3>
+            <p className="carousel-text mt-5">
+              With dozens of resort islands, the Maldives relies on tourism as
+              its dominant industry that draws on a large portion of the
+              workforce.
             </p>
-            <button className="btn default-btn">Meet Dr. Michale</button>
+            <button className="btn default-btn">Explore now</button>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="bg-gradient-overlay">
+        <Carousel.Item className="bg-overlay" interval={3000}>
           <img
             className="d-block carousel-image"
-            src="https://github.com/tajbiul-hossain/dental-depot-images/blob/main/images/banner/banner3.jpg?raw=true"
-            alt="Third slide"
+            src="https://i.ibb.co/6NqYPvK/banner3.webp"
+            alt="banner3"
           />
 
-          <Carousel.Caption className="caption font-link">
-            <h3 className="carousel-title">
-              Providing Everyone With Easy Access To Great Dental Care
-            </h3>
-            <p className="carousel-text">
-              Welcome to a place where patients of all ages enjoy a wide range
-              of personalized dental solutions.
+          <Carousel.Caption className="caption ">
+            <h3 className="carousel-title">Australia</h3>
+            <p className="carousel-text mt-5">
+              Australia, is a sovereign country comprising the mainland of the
+              Australian continent, the island of Tasmania, and numerous smaller
+              islands.
             </p>
-            <button className="btn default-btn">See our services</button>
+            <button className="btn default-btn">Explore now</button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

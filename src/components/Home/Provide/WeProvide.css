@@ -1,0 +1,18 @@
+.feature .fas {
+  color: #ff4a52;
+}
+
+.feature h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #040e27;
+  margin-bottom: 10px;
+  margin-top: 41px;
+}
+
+.feature p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6e6e6e;
+  line-height: 28px;
+}

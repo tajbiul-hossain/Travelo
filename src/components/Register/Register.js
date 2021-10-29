@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { Form } from "react-bootstrap";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Register.css";
 const Register = () => {
@@ -17,9 +17,7 @@ const Register = () => {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-  // const location = useLocation();
   const history = useHistory();
-  // const redirect_url = location.state?.from || "/home";
 
   const handleGoogleSignUp = () => {
     signInUsingGoogle().then((result) => {
@@ -71,7 +69,7 @@ const Register = () => {
   return (
     <div id="register" className="container">
       <div className="py-3 form-card">
-        <h2 className="font-link section-heading">Register</h2>
+        <h2 className=" section-heading">Register</h2>
         <div className="heading-underline"></div>
         <div>
           <Form

@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Rubik",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,32 +14,29 @@ code {
     monospace;
 }
 
-.font-link {
-  font-family: "Montserrat", sans-serif;
-}
-
 .btn.default-btn {
-  min-width: 120px;
-  height: 46px;
-  line-height: 42px;
-  font-size: 14px;
-  font-weight: 600;
-  display: inline-block;
-  padding: 0 20px;
-  text-align: center;
-  text-transform: uppercase;
+  background-color: #1ec6b6;
   color: #fff;
-  border-radius: 2px;
-  background-color: #00aeef;
-  -webkit-transition: all 500ms;
-  -o-transition: all 500ms;
-  transition: all 500ms;
-  border: 2px solid #00aeef;
+  display: inline-block;
+  padding: 18px 41px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5 px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .btn.default-btn:hover,
 .btn.default-btn:focus {
   box-shadow: none;
-  background-color: transparent;
-  color: #00aeef;
+  background-color: #ff4a52;
+  color: #fff;
 }

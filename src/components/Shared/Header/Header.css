@@ -1,36 +1,76 @@
-.navbar-light .navbar-brand {
-  color: #00aeef !important;
-  font-size: 1.8rem;
+.navbar .navbar-light {
+  background-color: #fff !important;
+}
+.navbar .navbar-brand {
+  color: #1ec6b6 !important;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
-.navbar .nav-link {
+.navbar .nav-link,
+.navbar .dropdown a {
   color: #000;
   padding: 0 15px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-.navbar .nav-link:hover {
-  color: #00aeef;
+.navbar .nav-link:hover,
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+  color: #1ec6b6;
 }
 
-.navbar .register-btn {
-  color: #fff;
+.navbar .dropdown {
+  display: inline-block;
+  position: relative;
 }
+
+.navbar .dropdown a {
+  text-decoration: none;
+}
+
+.navbar .dropdown .submenu {
+  position: absolute;
+  left: 0;
+  top: 160%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgb(0 0 0 / 2%);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  transition: 0.3s;
+  list-style: none;
+}
+
+.navbar .dropdown:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 225%;
+}
+
 .navbar .navbar-collapse {
   justify-content: end;
 }
 
+.navbar .register-btn {
+  background-color: #ff4a52;
+  color: #fff !important;
+  padding: 0.5rem 0.7rem;
+}
+
 .navbar .register-btn:hover,
 .navbar .register-btn:focus {
-  color: #00aeff;
+  background-color: #1ec6b6;
 }
 
 .navbar .username {
   font-weight: 500;
   text-decoration: none;
+  width: 50%;
 }
 
 .navbar .username:hover,
@@ -41,14 +81,36 @@
 .navbar .user-image {
   height: 3rem;
   border-radius: 50%;
-  padding-right: 1rem;
+  padding: 0;
 }
 
 @media only screen and (max-width: 991px) {
+  .navbar .register-btn {
+    padding: 0.5rem 0.7rem !important;
+  }
+
   .navbar .navbar-collapse {
     text-align: start;
   }
+
   .navbar .nav-link {
     padding: 0;
+  }
+
+  .navbar .nav-link,
+  .navbar .dropdown a {
+    padding-bottom: 10px;
+  }
+
+  .navbar .dropdown {
+    display: block;
+  }
+
+  .navbar .dropdown a {
+    padding-left: 0;
+  }
+
+  .navbar .dropdown:hover > .submenu {
+    top: 100%;
   }
 }

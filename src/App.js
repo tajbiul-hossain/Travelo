@@ -4,7 +4,7 @@ import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
-import Details from "./components/Home/serviceDetails/Details";
+import Book from "./components/Home/Booking/Book";
 import Footer from "./components/Shared/Footer/Footer";
 import Header from "./components/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
@@ -25,13 +25,13 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <PrivateRoute path="/details/:serviceId">
-              <Details />
+            <PrivateRoute path="/book/:serviceId">
+              <Book />
             </PrivateRoute>
-            <PrivateRoute path="/book">
+            <PrivateRoute path="/my-bookings">
               <BookAppointment />
             </PrivateRoute>
-            <PrivateRoute path="/pricing">
+            <PrivateRoute path="/manage-bookings">
               <PriceTable />
             </PrivateRoute>
             <Route path="/login">

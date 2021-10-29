@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, NavLink } from "react-bootstrap";
-import { HashLink } from "react-router-hash-link";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import useAuth from "../../../hooks/useAuth";
@@ -10,32 +9,49 @@ const Header = () => {
   const location = useLocation();
   return (
     <>
-      <Navbar
-        bg="light"
-        variant="light"
-        sticky="top"
-        collapseOnSelect
-        expand="lg"
-      >
-        <Container className="font-link">
-          <Navbar.Brand href="/home">Dental Depot</Navbar.Brand>
+      <Navbar variant="light" collapseOnSelect expand="lg">
+        <Container className="">
+          <Navbar.Brand href="/">Travelo</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
-            <Nav.Link as={HashLink} to="/home#home">
+            <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={HashLink} to="/pricing">
-              Pricing
+            <Nav.Link as={Link} to="/about">
+              About
             </Nav.Link>
-            <Nav.Link as={HashLink} to="/book">
-              Appointment
+            <Nav.Link as={Link} to="/contact">
+              Contact
             </Nav.Link>
             {user?.email ? (
               <div className="d-lg-flex align-items-center">
-                <div className="d-flex  align-items-center">
-                  <Nav.Link className="username">{user.displayName}</Nav.Link>
-                  <img className="user-image" src={user.photoURL} alt="" />
-                </div>
+                <li className="dropdown">
+                  <Nav.Link>
+                    profile <i className="fas fa-angle-down"></i>
+                  </Nav.Link>
+                  <ul className="submenu p-0">
+                    <div className="d-flex align-items-center justify-content-around">
+                      <img className="user-image" src={user.photoURL} alt="" />
+                      <Nav.Link className="username p-0">
+                        {user.displayName}
+                      </Nav.Link>
+                    </div>
+                    <NavDropdown.Divider />
+                    <Nav.Link as={Link} to="/my-bookings" className="ps-3 pb-2">
+                      My Bookings
+                    </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/manage-bookings"
+                      className="ps-3 pb-2"
+                    >
+                      Manage Bookings
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/add-service" className="ps-3 pb-2">
+                      Add Service
+                    </Nav.Link>
+                  </ul>
+                </li>
                 <button
                   onClick={logOut}
                   className="btn default-btn register-btn"

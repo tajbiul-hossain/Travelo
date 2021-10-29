@@ -10,13 +10,12 @@
 }
 
 .heading-underline {
-  width: 3rem;
+  width: 4rem;
   height: 0.2rem;
-  background-color: #00aeef;
+  background-color: #1ec6b6;
   margin: 1rem auto 3rem;
 }
 
-/* Make it responsive */
 @media only screen and (max-width: 688px) {
   .service-container {
     grid-template-columns: repeat(1, 1fr);

@@ -61,6 +61,10 @@ const useFirebase = () => {
     setRedirectURL(redirect_url);
   };
 
+  const updateLoadingState = (loadingState) => {
+    setLoading(loadingState);
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -83,6 +87,7 @@ const useFirebase = () => {
     logOut,
     setUserName,
     updateRedirectURL,
+    updateLoadingState,
   };
 };
 

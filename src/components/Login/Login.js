@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+
 const Login = () => {
   const { signInUsingGoogle, logInWithEmailAndPassword, updateRedirectURL } =
     useAuth();
@@ -43,7 +44,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="py-3 form-card">
-        <h2 className="font-link section-heading">Log In</h2>
+        <h2 className=" section-heading">Log In</h2>
         <div className="heading-underline"></div>
         <div>
           <Form

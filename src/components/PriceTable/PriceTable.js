@@ -4,7 +4,7 @@ import "./PriceTable.css";
 const PriceTable = () => {
   return (
     <div className="container pricing">
-      <h2 className="mt-5 font-link section-heading">Price List</h2>
+      <h2 className="mt-5  section-heading">Price List</h2>
       <div className="heading-underline"></div>
       <Table>
         <thead>

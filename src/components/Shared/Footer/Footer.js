@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-5 text-start">
-            <h4 className="name">Dental Depot</h4>
+            <h4 className="name">Travelo</h4>
             <ul className="footer-list">
               <li style={{ fontWeight: "300" }}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -26,7 +26,7 @@ const Footer = () => {
               </li>
               <li style={{ fontWeight: "300" }}>
                 <FontAwesomeIcon icon={faEnvelope} />
-                info.dental.depot@gmail.com
+                info.travelo@gmail.com
               </li>
             </ul>
           </div>
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-line"></div>
-          <p className="mt-4">&copy; Dental Depot</p>
+          <p className="mt-4">&copy; Travelo || Your Travel Companion</p>
         </div>
       </div>
     </div>
