@@ -69,7 +69,9 @@ const UserBookings = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/userbookings/${user.email}`)
+    fetch(
+      `https://sleepy-springs-60612.herokuapp.com/userbookings/${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setBookings(data);
@@ -83,7 +85,7 @@ const UserBookings = () => {
 
   //Delete Booking
   const handleDeleteBooking = (id) => {
-    const url = `http://localhost:5000/bookings/${id}`;
+    const url = `https://sleepy-springs-60612.herokuapp.com/bookings/${id}`;
     fetch(url, {
       method: "delete",
     })

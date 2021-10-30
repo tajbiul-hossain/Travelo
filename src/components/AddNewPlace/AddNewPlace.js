@@ -47,7 +47,7 @@ const AddNewPlace = () => {
 
     const newPackage = { name, shortDesc, img, price, exc, inc };
 
-    fetch("http://localhost:5000/package", {
+    fetch("https://sleepy-springs-60612.herokuapp.com/package", {
       method: "POST",
       headers: {
         "content-type": "application/json",

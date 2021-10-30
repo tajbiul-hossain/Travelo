@@ -45,7 +45,7 @@ const Book = () => {
   const returnRef = useRef();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/packages/${serviceId}`)
+    fetch(`https://sleepy-springs-60612.herokuapp.com/packages/${serviceId}`)
       .then((res) => res.json())
       .then((data) => {
         setService(data);
@@ -75,7 +75,7 @@ const Book = () => {
       status,
     };
 
-    fetch("http://localhost:5000/booking", {
+    fetch("https://sleepy-springs-60612.herokuapp.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

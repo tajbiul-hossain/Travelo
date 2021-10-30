@@ -94,7 +94,7 @@ const ManageBookings = () => {
   const [bookingId, setBookingId] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/managebookings")
+    fetch("https://sleepy-springs-60612.herokuapp.com/managebookings")
       .then((res) => res.json())
       .then((data) => {
         setBookings(data);
@@ -108,7 +108,7 @@ const ManageBookings = () => {
 
   //Delete Booking
   const handleDeleteBooking = (id) => {
-    const url = `http://localhost:5000/bookings/${id}`;
+    const url = `https://sleepy-springs-60612.herokuapp.com/bookings/${id}`;
     fetch(url, {
       method: "delete",
     })
@@ -129,7 +129,7 @@ const ManageBookings = () => {
     const booking = bookings.filter((booking) => booking._id === id);
     const updatedBooking = booking[0];
     updatedBooking.status = "Confirmed";
-    const url = `http://localhost:5000/managebookings/${id}`;
+    const url = `https://sleepy-springs-60612.herokuapp.com/managebookings/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
