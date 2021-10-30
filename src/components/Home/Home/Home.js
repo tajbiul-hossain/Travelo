@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import WeProvide from "../Provide/WeProvide";
-import Services from "../Services/Services";
 import RecentTrips from "../RecentTrips/RecentTrips";
+import Services from "../Services/Services";
 import "./Home.css";
 const Home = () => {
   return (

@@ -67,7 +67,7 @@ const Register = () => {
   };
 
   return (
-    <div id="register" className="container">
+    <div className="container">
       <div className="py-3 form-card">
         <h2 className=" section-heading">Register</h2>
         <div className="heading-underline"></div>

@@ -45,7 +45,7 @@ const Book = () => {
   const returnRef = useRef();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${serviceId}`)
+    fetch(`http://localhost:5000/packages/${serviceId}`)
       .then((res) => res.json())
       .then((data) => {
         setService(data);
@@ -60,6 +60,7 @@ const Book = () => {
     const persons = personRef.current.value;
     const journeyDate = journeyRef.current.value;
     const returnDate = returnRef.current.value;
+    const status = "Pending";
 
     const newBooking = {
       userName,
@@ -71,6 +72,7 @@ const Book = () => {
       packageName,
       price,
       img,
+      status,
     };
 
     fetch("http://localhost:5000/booking", {
@@ -118,8 +120,8 @@ const Book = () => {
                       <Form.Control
                         id="floatingInputCustom"
                         type="text"
-                        onChange={() => {}}
-                        value={user.displayName || ""}
+                        readOnly
+                        defaultValue={user.displayName}
                       />
                       <label htmlFor="floatingInputCustom">Name</label>
                     </Form.Floating>
@@ -129,8 +131,8 @@ const Book = () => {
                       <Form.Control
                         id="floatingInputCustom"
                         type="email"
-                        onChange={() => {}}
-                        value={user.email || ""}
+                        readOnly
+                        defaultValue={user.email}
                       />
                       <label htmlFor="floatingInputCustom">Email address</label>
                     </Form.Floating>

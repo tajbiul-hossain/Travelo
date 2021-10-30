@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <Navbar variant="light" collapseOnSelect expand="lg">
-        <Container className="">
+        <Container>
           <Navbar.Brand href="/">Travelo</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
@@ -27,7 +27,7 @@ const Header = () => {
               <div className="d-lg-flex align-items-center">
                 <li className="dropdown">
                   <Nav.Link>
-                    profile <i className="fas fa-angle-down"></i>
+                    Profile <i className="fas fa-angle-down"></i>
                   </Nav.Link>
                   <ul className="submenu p-0">
                     <div className="d-flex align-items-center justify-content-around">
@@ -47,8 +47,12 @@ const Header = () => {
                     >
                       Manage Bookings
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/add-service" className="ps-3 pb-2">
-                      Add Service
+                    <Nav.Link
+                      as={Link}
+                      to="/add-new-package"
+                      className="ps-3 pb-2"
+                    >
+                      Add Package
                     </Nav.Link>
                   </ul>
                 </li>

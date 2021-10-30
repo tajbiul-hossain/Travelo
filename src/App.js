@@ -9,8 +9,10 @@ import Footer from "./components/Shared/Footer/Footer";
 import Header from "./components/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
 import Notfound from "./components/NotFound/Notfound";
-import BookAppointment from "./components/BookAppointment/BookAppointment";
-import PriceTable from "./components/PriceTable/PriceTable";
+import UserBookings from "./components/UserBookings/UserBookings";
+import ManageBookings from "./components/ManageBookings/ManageBookings";
+import AddNewPlace from "./components/AddNewPlace/AddNewPlace";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -25,14 +27,20 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
+            <Route path="/about">
+              <About />
+            </Route>
             <PrivateRoute path="/book/:serviceId">
               <Book />
             </PrivateRoute>
             <PrivateRoute path="/my-bookings">
-              <BookAppointment />
+              <UserBookings />
             </PrivateRoute>
             <PrivateRoute path="/manage-bookings">
-              <PriceTable />
+              <ManageBookings />
+            </PrivateRoute>
+            <PrivateRoute path="/add-new-package">
+              <AddNewPlace />
             </PrivateRoute>
             <Route path="/login">
               <Login />
