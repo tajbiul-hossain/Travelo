@@ -24,10 +24,7 @@ form .input-label {
   border-radius: 1rem;
 }
 
-form .auth-form .auth-btn {
-  padding: 0.5rem 0.7rem;
-}
-
+form .auth-form .auth-btn,
 form .auth-form .google-btn {
   padding: 0.5rem 0.7rem;
   background-color: #ff4a52;

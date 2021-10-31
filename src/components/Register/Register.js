@@ -20,9 +20,13 @@ const Register = () => {
   const history = useHistory();
 
   const handleGoogleSignUp = () => {
-    signInUsingGoogle().then((result) => {
-      history.push(redirectURL);
-    });
+    signInUsingGoogle()
+      .then((result) => {
+        history.push(redirectURL);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
   const handleEmailSignUp = (e) => {
@@ -39,7 +43,7 @@ const Register = () => {
       );
       return;
     }
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       setEmailError("Invalid email address");
       return;
     }
@@ -128,6 +132,7 @@ const Register = () => {
               <p className="mb-2">Sign up with</p>
               <button
                 className="btn default-btn google-btn"
+                type="button"
                 onClick={handleGoogleSignUp}
               >
                 Google

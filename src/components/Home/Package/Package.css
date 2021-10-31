@@ -70,8 +70,3 @@
   color: #fff !important;
   padding: 0.5rem 0.7rem;
 }
-
-.service .book-btn:hover,
-.service .book-btn:focus {
-  background-color: #ff4a52;
-}

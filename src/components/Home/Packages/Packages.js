@@ -4,11 +4,24 @@ import "./Packages.css";
 
 const Packages = () => {
   const [packages, setPackages] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     fetch("https://sleepy-springs-60612.herokuapp.com/packages")
       .then((res) => res.json())
-      .then((data) => setPackages(data));
+      .then((data) => {
+        setPackages(data);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading)
+    return (
+      <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+    );
 
   return (
     <div id="services" className="container pt-4">

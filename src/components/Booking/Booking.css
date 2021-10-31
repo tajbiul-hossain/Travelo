@@ -40,11 +40,14 @@
   font-weight: 400;
 }
 
-.single-booking .booking-info .cancel-btn {
-  padding: 0.5rem 0.7rem;
-  background-color: #ff4a52;
-}
-.single-booking .booking-info .update-btn {
+.single-booking .booking-info .cancel-btn,
+.single-booking .btn.update-btn::before {
   padding: 0.5rem 0.7rem;
   background-color: #1ec6b6;
+}
+
+.single-booking .booking-info .update-btn,
+.single-booking .btn.cancel-btn::before {
+  padding: 0.5rem 0.7rem;
+  background-color: #ff4a52;
 }

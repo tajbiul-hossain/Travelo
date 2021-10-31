@@ -10,7 +10,9 @@ const Booking = (props) => {
     userName,
     userEmail,
     phone,
-    persons,
+    adult,
+    child,
+    room,
     journeyDate,
     returnDate,
     packageName,
@@ -50,17 +52,19 @@ const Booking = (props) => {
         <p className="m-0 mb-1">Name: {userName}</p>
         <p className="m-0 mb-1">Email: {userEmail}</p>
         <p className="m-0 mb-1">Phone: {phone}</p>
-        <p className="m-0 mb-1">Person(s): {persons}</p>
+        <p className="m-0 mb-1">Adult(s): {adult}</p>
+        <p className="m-0 mb-1">Child(s): {child}</p>
+        <p className="m-0 mb-1">Room(s): {room}</p>
         <p className="m-0 mb-1">Journey Date: {journeyDate}</p>
         <p className="m-0 mb-1">Return Date: {returnDate}</p>
         <h5 className="m-0 mt-4">
           Total Cost:{" "}
           <span style={{ color: "#1ec6b6" }}>
-            ${parseInt(price) * parseInt(persons)}
+            ${parseInt(price) * (parseInt(adult) + parseInt(child))}
           </span>
         </h5>
         <div className="pt-3 d-flex justify-content-center">
-          {location.pathname === "/manage-bookings" && (
+          {location.pathname === "/manage-bookings" && status === "Pending" && (
             <button
               onClick={() => props.handleUpdateStatus(_id)}
               className="btn default-btn update-btn me-5"

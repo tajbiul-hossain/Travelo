@@ -65,6 +65,7 @@ const UserBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [dialogModalShow, setDialogModalShow] = useState(false);
   const [confirmModalShow, setConfirmModalShow] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [bookingId, setBookingId] = useState("");
   const { user } = useAuth();
 
@@ -75,6 +76,7 @@ const UserBookings = () => {
       .then((res) => res.json())
       .then((data) => {
         setBookings(data);
+        setLoading(false);
       });
   }, []);
 
@@ -100,6 +102,15 @@ const UserBookings = () => {
         }
       });
   };
+
+  if (loading)
+    return (
+      <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+    );
 
   return (
     <div className="container mt-5">

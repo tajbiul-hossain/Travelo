@@ -4,7 +4,16 @@ import { Route, Redirect } from "react-router-dom";
 
 const PrivateRoute = ({ children, ...rest }) => {
   const { user, loading } = useAuth();
-  if (loading) return "loading";
+
+  if (loading)
+    return (
+      <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+    );
+
   return (
     <Route
       {...rest}

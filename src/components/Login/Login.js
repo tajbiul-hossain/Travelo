@@ -17,9 +17,13 @@ const Login = () => {
   updateRedirectURL(redirect_url);
 
   const handleGoogleSignIn = () => {
-    signInUsingGoogle().then((result) => {
-      history.push(redirect_url);
-    });
+    signInUsingGoogle()
+      .then((result) => {
+        history.push(redirect_url);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
   const handleEmailSignIn = (e) => {
@@ -91,6 +95,7 @@ const Login = () => {
               <p className="mb-2">Sign in with</p>
               <button
                 className="btn default-btn google-btn"
+                type="button"
                 onClick={handleGoogleSignIn}
               >
                 Google

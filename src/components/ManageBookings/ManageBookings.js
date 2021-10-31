@@ -91,6 +91,7 @@ const ManageBookings = () => {
     useState(false);
   const [confirmModalShow, setConfirmModalShow] = useState(false);
   const [updateModalShow, setUpdateModalShow] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [bookingId, setBookingId] = useState("");
 
   useEffect(() => {
@@ -98,6 +99,7 @@ const ManageBookings = () => {
       .then((res) => res.json())
       .then((data) => {
         setBookings(data);
+        setLoading(false);
       });
   }, [bookings]);
 
@@ -144,6 +146,15 @@ const ManageBookings = () => {
         }
       });
   };
+
+  if (loading)
+    return (
+      <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+    );
 
   return (
     <div className="container mt-5">

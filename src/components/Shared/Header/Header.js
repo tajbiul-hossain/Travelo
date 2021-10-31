@@ -21,16 +21,18 @@ const Header = () => {
             />
             Travelo
           </Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Toggle>
+            <i class="fas fa-ellipsis-v"></i>
+          </Navbar.Toggle>
           <Navbar.Collapse>
             <Nav.Link as={Link} to="/">
-              Home
+              <span>Home</span>
             </Nav.Link>
             <Nav.Link as={Link} to="/about">
-              About
+              <span>About</span>
             </Nav.Link>
             <Nav.Link as={Link} to="/contact">
-              Contact
+              <span>Contact</span>
             </Nav.Link>
             {user?.email ? (
               <div className="d-lg-flex align-items-center">
@@ -47,21 +49,21 @@ const Header = () => {
                     </div>
                     <NavDropdown.Divider />
                     <Nav.Link as={Link} to="/my-bookings" className="ps-3 pb-2">
-                      My Bookings
+                      <span>My Bookings</span>
                     </Nav.Link>
                     <Nav.Link
                       as={Link}
                       to="/manage-bookings"
                       className="ps-3 pb-2"
                     >
-                      Manage Bookings
+                      <span>Manage Bookings</span>
                     </Nav.Link>
                     <Nav.Link
                       as={Link}
                       to="/add-new-package"
                       className="ps-3 pb-2"
                     >
-                      Add Package
+                      <span>Add Package</span>
                     </Nav.Link>
                   </ul>
                 </li>

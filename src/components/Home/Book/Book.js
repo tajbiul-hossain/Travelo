@@ -36,11 +36,14 @@ function MyVerticallyCenteredModal(props) {
 const Book = () => {
   const [service, setService] = useState({});
   const [modalShow, setModalShow] = useState(false);
+  const [loading, setLoading] = useState(true);
   const { user } = useAuth();
   const { serviceId } = useParams();
   const { name, inc, exc, price, img } = service;
   const phoneRef = useRef();
-  const personRef = useRef();
+  const adultRef = useRef();
+  const childRef = useRef();
+  const roomRef = useRef();
   const journeyRef = useRef();
   const returnRef = useRef();
 
@@ -49,6 +52,7 @@ const Book = () => {
       .then((res) => res.json())
       .then((data) => {
         setService(data);
+        setLoading(false);
       });
   }, []);
 
@@ -57,7 +61,9 @@ const Book = () => {
     const userName = user.displayName;
     const userEmail = user.email;
     const phone = phoneRef.current.value;
-    const persons = personRef.current.value;
+    const adult = adultRef.current.value;
+    const child = childRef.current.value;
+    const room = roomRef.current.value;
     const journeyDate = journeyRef.current.value;
     const returnDate = returnRef.current.value;
     const status = "Pending";
@@ -66,7 +72,9 @@ const Book = () => {
       userName,
       userEmail,
       phone,
-      persons,
+      adult,
+      child,
+      room,
       journeyDate,
       returnDate,
       packageName,
@@ -92,6 +100,15 @@ const Book = () => {
 
     e.preventDefault();
   };
+
+  if (loading)
+    return (
+      <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+      </div>
+    );
 
   return (
     <div className="single-package">
@@ -153,16 +170,51 @@ const Book = () => {
                         aria-label="Floating label select example"
                         id="floatingInputCustom"
                         type="text"
-                        ref={personRef}
+                        ref={adultRef}
                       >
-                        <option value="1">1 Person</option>
-                        <option value="2">2 Persons</option>
-                        <option value="3">3 Persons</option>
-                        <option value="4">4 Persons</option>
-                        <option value="5">5 Persons</option>
-                        <option value="6">6 Persons</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                       </Form.Select>
-                      <label htmlFor="floatingInputCustom">Person(s)</label>
+                      <label htmlFor="floatingInputCustom">Adult(s)</label>
+                    </Form.Floating>
+                  </Col>
+                  <Col className="d-flex justify-content-center" md>
+                    <Form.Floating className="mb-3">
+                      <Form.Select
+                        aria-label="Floating label select example"
+                        id="floatingInputCustom"
+                        type="text"
+                        ref={childRef}
+                      >
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </Form.Select>
+                      <label htmlFor="floatingInputCustom">Child(s)</label>
+                    </Form.Floating>
+                  </Col>
+                  <Col className="d-flex justify-content-center" md>
+                    <Form.Floating className="mb-3">
+                      <Form.Select
+                        aria-label="Floating label select example"
+                        id="floatingInputCustom"
+                        type="text"
+                        ref={roomRef}
+                      >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </Form.Select>
+                      <label htmlFor="floatingInputCustom">Room(s)</label>
                     </Form.Floating>
                   </Col>
                   <Col className="d-flex justify-content-center" md>

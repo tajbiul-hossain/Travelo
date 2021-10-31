@@ -37,6 +37,9 @@ const Banner = () => {
               its dominant industry that draws on a large portion of the
               workforce.
             </p>
+            <Link to="/contact">
+              <button className="btn default-btn">Contact Us</button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="bg-overlay" interval={3000}>
@@ -53,6 +56,9 @@ const Banner = () => {
               Australian continent, the island of Tasmania, and numerous smaller
               islands.
             </p>
+            <Link to="/contact">
+              <button className="btn default-btn">Contact Us</button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
