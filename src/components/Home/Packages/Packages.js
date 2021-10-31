@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Service from "../Service/Service";
-import "./Services.css";
+import Package from "../Package/Package";
+import "./Packages.css";
 
-const Services = () => {
-  const [services, setServices] = useState([]);
+const Packages = () => {
+  const [packages, setPackages] = useState([]);
   useEffect(() => {
     fetch("https://sleepy-springs-60612.herokuapp.com/packages")
       .then((res) => res.json())
-      .then((data) => setServices(data));
+      .then((data) => setPackages(data));
   }, []);
 
   return (
@@ -15,12 +15,12 @@ const Services = () => {
       <h2 className="mt-5  section-heading">Popular Packages</h2>
       <div className="heading-underline"></div>
       <div className="service-container">
-        {services.map((service) => (
-          <Service key={service._id} service={service}></Service>
+        {packages.map((service) => (
+          <Package key={service._id} service={service}></Package>
         ))}
       </div>
     </div>
   );
 };
 
-export default Services;
+export default Packages;

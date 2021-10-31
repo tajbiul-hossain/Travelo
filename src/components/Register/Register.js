@@ -69,14 +69,14 @@ const Register = () => {
   return (
     <div className="container">
       <div className="py-3 form-card">
-        <h2 className=" section-heading">Register</h2>
+        <h2 className="section-heading">Register</h2>
         <div className="heading-underline"></div>
         <div>
           <Form
             className="d-flex justify-content-center"
             onSubmit={handleEmailSignUp}
           >
-            <div>
+            <div className="auth-form">
               <Form.Group className="mb-3 text-start" controlId="formBasicName">
                 <Form.Label className="input-label">Name</Form.Label>
                 <Form.Control
@@ -115,7 +115,7 @@ const Register = () => {
                 <p className="text-danger">{passwordError}</p>
               </Form.Group>
               <p className="text-danger">{error}</p>
-              <button className="btn default-btn" type="submit">
+              <button className="btn default-btn auth-btn" type="submit">
                 Sign Up
               </button>
               <p className="mt-3">
@@ -125,8 +125,12 @@ const Register = () => {
                 </Link>
               </p>
               <h5>or</h5>
-              <button className="btn default-btn" onClick={handleGoogleSignUp}>
-                Google Sign Up
+              <p className="mb-2">Sign up with</p>
+              <button
+                className="btn default-btn google-btn"
+                onClick={handleGoogleSignUp}
+              >
+                Google
               </button>
             </div>
           </Form>

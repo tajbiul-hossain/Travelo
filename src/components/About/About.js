@@ -9,7 +9,7 @@ const About = () => {
           src="https://i.ibb.co/yFqnyT7/about-head.jpg"
           alt=""
         />
-        <h2 className="about-title">About Us</h2>
+        <h2 className="about-title">About</h2>
       </div>
       <div className="container text-start">
         <h1 className="py-5 fw-normal">Our Story</h1>

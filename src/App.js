@@ -4,15 +4,16 @@ import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
-import Book from "./components/Home/Booking/Book";
+import Book from "./components/Home/Book/Book";
 import Footer from "./components/Shared/Footer/Footer";
 import Header from "./components/Shared/Header/Header";
 import AuthProvider from "./contexts/AuthProvider";
 import Notfound from "./components/NotFound/Notfound";
 import UserBookings from "./components/UserBookings/UserBookings";
 import ManageBookings from "./components/ManageBookings/ManageBookings";
-import AddNewPlace from "./components/AddNewPlace/AddNewPlace";
 import About from "./components/About/About";
+import AddNewPackage from "./components/AddNewPackage/AddNewPackage";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
             <PrivateRoute path="/book/:serviceId">
               <Book />
             </PrivateRoute>
@@ -40,7 +44,7 @@ function App() {
               <ManageBookings />
             </PrivateRoute>
             <PrivateRoute path="/add-new-package">
-              <AddNewPlace />
+              <AddNewPackage />
             </PrivateRoute>
             <Route path="/login">
               <Login />

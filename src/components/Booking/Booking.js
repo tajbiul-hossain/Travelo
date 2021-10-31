@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "./Bookings.css";
+import "./Booking.css";
 
-const Bookings = (props) => {
+const Booking = (props) => {
   const location = useLocation();
 
   const {
@@ -80,4 +80,4 @@ const Bookings = (props) => {
   );
 };
 
-export default Bookings;
+export default Booking;

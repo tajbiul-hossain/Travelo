@@ -1,8 +1,8 @@
 import React from "react";
-import "./Service.css";
 import { Link } from "react-router-dom";
+import "./Package.css";
 
-const Service = ({ service }) => {
+const Package = ({ service }) => {
   const { _id, name, price, shortDesc, img } = service;
 
   return (
@@ -38,4 +38,4 @@ const Service = ({ service }) => {
   );
 };
 
-export default Service;
+export default Package;

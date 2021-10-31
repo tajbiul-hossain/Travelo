@@ -28,7 +28,7 @@ function ConfirmationModal(props) {
   );
 }
 
-const AddNewPlace = () => {
+const AddNewPackage = () => {
   const [confirmationModalShow, setConfirmationModalShow] = useState(false);
   const packageNameRef = useRef();
   const packageDescRef = useRef();
@@ -174,4 +174,4 @@ const AddNewPlace = () => {
   );
 };
 
-export default AddNewPlace;
+export default AddNewPackage;

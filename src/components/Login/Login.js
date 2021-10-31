@@ -51,7 +51,7 @@ const Login = () => {
             className="d-flex justify-content-center"
             onSubmit={handleEmailSignIn}
           >
-            <div>
+            <div className="auth-form">
               <Form.Group
                 className="mb-3 text-start"
                 controlId="formBasicEmail"
@@ -78,7 +78,7 @@ const Login = () => {
                 />
               </Form.Group>
               <p className="text-danger">{error}</p>
-              <button className="btn default-btn" type="submit">
+              <button className="btn default-btn auth-btn" type="submit">
                 Sign In
               </button>
               <p className="mt-3">
@@ -88,8 +88,12 @@ const Login = () => {
                 </Link>
               </p>
               <h5>or</h5>
-              <button className="btn default-btn" onClick={handleGoogleSignIn}>
-                Google Sign In
+              <p className="mb-2">Sign in with</p>
+              <button
+                className="btn default-btn google-btn"
+                onClick={handleGoogleSignIn}
+              >
+                Google
               </button>
             </div>
           </Form>

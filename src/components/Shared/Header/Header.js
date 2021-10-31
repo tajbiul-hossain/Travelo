@@ -11,7 +11,16 @@ const Header = () => {
     <>
       <Navbar variant="light" collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="/">Travelo</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              className="me-2"
+              src="https://i.ibb.co/2gbnFNh/nav-icon.png"
+              alt=""
+              width="70"
+              height="70"
+            />
+            Travelo
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav.Link as={Link} to="/">

@@ -66,12 +66,12 @@
 }
 
 .service .book-btn {
-  background-color: #ff4a52;
+  background-color: #1ec6b6;
   color: #fff !important;
   padding: 0.5rem 0.7rem;
 }
 
 .service .book-btn:hover,
 .service .book-btn:focus {
-  background-color: #1ec6b6;
+  background-color: #ff4a52;
 }

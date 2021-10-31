@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
-import Bookings from "../Bookings/Bookings";
+import Booking from "../Booking/Booking";
 import "./UserBookings.css";
 
 function DialogModal(props) {
@@ -85,7 +85,7 @@ const UserBookings = () => {
 
   //Delete Booking
   const handleDeleteBooking = (id) => {
-    const url = `https://sleepy-springs-60612.herokuapp.com/bookings/${id}`;
+    const url = `https://sleepy-springs-60612.herokuapp.com/package/${id}`;
     fetch(url, {
       method: "delete",
     })
@@ -107,13 +107,13 @@ const UserBookings = () => {
         <h2 className="mt-5 section-heading">My Bookings</h2>
         <div className="heading-underline"></div>
       </div>
-      <div className="user-bookings">
+      <div className="bookings">
         {bookings.map((booking) => (
-          <Bookings
+          <Booking
             key={booking._id}
             booking={booking}
             showModal={showModal}
-          ></Bookings>
+          ></Booking>
         ))}
       </div>
       <DialogModal
