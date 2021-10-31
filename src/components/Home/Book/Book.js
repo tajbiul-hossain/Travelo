@@ -94,24 +94,24 @@ const Book = () => {
   };
 
   return (
-    <div>
-      <div className="service-head">
-        <img className="service-image" src={img} alt="" />
-        <h2 className="service-title">{name}</h2>
+    <div className="single-package">
+      <div className="package-head">
+        <img className="package-image" src={img} alt="" />
+        <h2 className="package-title">{name}</h2>
       </div>
       <div className="container">
         <div className="row mt-5">
-          <div className="col-12 col-lg-4 text-start">
-            <h2 className="service-price detailed-price">Cost: ${price}/P</h2>
+          <div className="col-12 col-md-4 text-start">
+            <h2 className="detailed-price">Cost: ${price}/P</h2>
             <h6>(4 NIGHTS / 5 DAYS)</h6>
-            <p className="service-desc fw-normal mt-3">
+            <p className="fw-normal mt-3">
               <b>Package includes:</b> {inc}
             </p>
-            <p className="service-desc fw-normal">
+            <p className="fw-normal">
               <b>Package excludes:</b> {exc}
             </p>
           </div>
-          <div className="col-12 col-lg-8 p-3">
+          <div className="col-12 col-md-8 p-3">
             <Form className="d-flex" onSubmit={handleConfirmBooking}>
               <div>
                 <Row className="g-2">

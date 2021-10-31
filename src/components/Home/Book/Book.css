@@ -1,8 +1,8 @@
-.service-head {
+.package-head {
   position: relative;
 }
 
-.service-title {
+.package-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,9 +17,9 @@
   margin-bottom: 1rem;
 }
 
-.service-image {
+.package-image {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 .detailed-price {
@@ -31,8 +31,23 @@ form .form-floating .form-control[readonly] {
   background-color: #fff;
 }
 
-@media only screen and (max-width: 991px) {
-  .service-image {
-    width: 70%;
+@media only screen and (max-width: 767px) {
+  .package-title {
+    font-size: 5rem;
+  }
+
+  .single-package form .form-floating .form-control,
+  .single-package form .form-floating .form-select {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .package-title {
+    font-size: 3rem;
+  }
+
+  .single-package form .form-floating .form-control,
+  .single-package form .form-floating .form-select {
+    width: 18rem;
   }
 }
