@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { Col, Form, Modal, Row, Button } from "react-bootstrap";
+import { useHistory } from "react-router";
 import { useParams } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 import "./Book.css";
@@ -25,9 +26,9 @@ function MyVerticallyCenteredModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button className="btn default-btn" onClick={props.onHide}>
+        <button className="btn default-btn confirm-btn" onClick={props.onHide}>
           Done
-        </Button>
+        </button>
       </Modal.Footer>
     </Modal>
   );
@@ -39,6 +40,8 @@ const Book = () => {
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
   const { serviceId } = useParams();
+  const history = useHistory();
+
   const { name, inc, exc, price, img } = service;
   const phoneRef = useRef();
   const adultRef = useRef();
@@ -249,7 +252,10 @@ const Book = () => {
       </div>
       <MyVerticallyCenteredModal
         show={modalShow}
-        onHide={() => setModalShow(false)}
+        onHide={() => {
+          setModalShow(false);
+          history.push("/my-bookings");
+        }}
         backdrop="static"
         keyboard={false}
       />

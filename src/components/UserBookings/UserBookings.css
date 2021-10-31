@@ -10,6 +10,10 @@
   padding: 0.5rem 0.7rem;
 }
 
+.modal-dialog .btn.default-btn::before {
+  background-color: transparent;
+}
+
 .modal-dialog .cancel-btn:focus,
 .modal-dialog .confirm-btn:focus {
   box-shadow: none;
