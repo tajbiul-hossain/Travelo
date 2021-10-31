@@ -8,7 +8,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Nothing You Could Do", cursive;
-  font-size: 7rem;
+  font-size: 9rem;
   text-transform: capitalize;
   letter-spacing: 0.5rem;
   font-weight: 400;
@@ -20,4 +20,15 @@
 .about-image {
   width: 100%;
   height: 40vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-title {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about-title {
+    font-size: 4rem;
+  }
 }

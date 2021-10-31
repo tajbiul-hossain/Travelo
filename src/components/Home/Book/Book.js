@@ -142,7 +142,6 @@ const Book = () => {
                       <Form.Control
                         id="floatingInputCustom"
                         type="text"
-                        placeholder="phone"
                         ref={phoneRef}
                       />
                       <label htmlFor="floatingInputCustom">Phone</label>
@@ -171,7 +170,6 @@ const Book = () => {
                       <Form.Control
                         id="floatingInputCustom"
                         type="date"
-                        placeholder="mm/dd//yyyy"
                         ref={journeyRef}
                       />
                       <label htmlFor="floatingInputCustom">Journey Date</label>
@@ -182,7 +180,6 @@ const Book = () => {
                       <Form.Control
                         id="floatingInputCustom"
                         type="date"
-                        placeholder="mm/dd//yyyy"
                         ref={returnRef}
                       />
                       <label htmlFor="floatingInputCustom">Return Date</label>

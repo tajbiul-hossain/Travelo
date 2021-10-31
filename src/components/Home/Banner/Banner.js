@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Banner.css";
 const Banner = () => {
   return (
@@ -17,8 +18,9 @@ const Banner = () => {
               Switzerland is a mountainous Central European country, home to
               numerous lakes, villages and the high peaks of the Alps
             </p>
-            <button className="btn default-btn me-md-3">Explore now</button>
-            <button className="btn default-btn">Contact Us</button>
+            <Link to="/contact">
+              <button className="btn default-btn">Contact Us</button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="bg-overlay" interval={3000}>
@@ -35,7 +37,6 @@ const Banner = () => {
               its dominant industry that draws on a large portion of the
               workforce.
             </p>
-            <button className="btn default-btn">Explore now</button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="bg-overlay" interval={3000}>
@@ -52,7 +53,6 @@ const Banner = () => {
               Australian continent, the island of Tasmania, and numerous smaller
               islands.
             </p>
-            <button className="btn default-btn">Explore now</button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
