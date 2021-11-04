@@ -7,10 +7,10 @@ const PrivateRoute = ({ children, ...rest }) => {
 
   if (loading)
     return (
-      <div class="loader">
-        <div class="outer"></div>
-        <div class="middle"></div>
-        <div class="inner"></div>
+      <div className="loader">
+        <div className="outer"></div>
+        <div className="middle"></div>
+        <div className="inner"></div>
       </div>
     );
 

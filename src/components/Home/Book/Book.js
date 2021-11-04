@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import { Col, Form, Modal, Row, Button } from "react-bootstrap";
+import { Col, Form, Modal, Row } from "react-bootstrap";
 import { useHistory } from "react-router";
 import { useParams } from "react-router";
 import useAuth from "../../../hooks/useAuth";
@@ -106,10 +106,10 @@ const Book = () => {
 
   if (loading)
     return (
-      <div class="loader">
-        <div class="outer"></div>
-        <div class="middle"></div>
-        <div class="inner"></div>
+      <div className="loader">
+        <div className="outer"></div>
+        <div className="middle"></div>
+        <div className="inner"></div>
       </div>
     );
 

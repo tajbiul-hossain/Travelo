@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import Booking from "../Booking/Booking";
+import { useHistory } from "react-router-dom";
 import "./UserBookings.css";
 
 function DialogModal(props) {
@@ -68,12 +69,22 @@ const UserBookings = () => {
   const [loading, setLoading] = useState(true);
   const [bookingId, setBookingId] = useState("");
   const { user } = useAuth();
+  const history = useHistory();
 
   useEffect(() => {
-    fetch(
-      `https://sleepy-springs-60612.herokuapp.com/userbookings/${user.email}`
-    )
-      .then((res) => res.json())
+    const uri = `https://sleepy-springs-60612.herokuapp.com/userbookings?email=${user.email}`;
+    fetch(uri, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("idToken")}`,
+      },
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else if (res.status === 401) {
+          history.push("/login");
+        }
+      })
       .then((data) => {
         setBookings(data);
         setLoading(false);
@@ -105,10 +116,10 @@ const UserBookings = () => {
 
   if (loading)
     return (
-      <div class="loader">
-        <div class="outer"></div>
-        <div class="middle"></div>
-        <div class="inner"></div>
+      <div className="loader">
+        <div className="outer"></div>
+        <div className="middle"></div>
+        <div className="inner"></div>
       </div>
     );
 

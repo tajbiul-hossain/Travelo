@@ -22,7 +22,7 @@ const Header = () => {
             Travelo
           </Navbar.Brand>
           <Navbar.Toggle>
-            <i class="fas fa-ellipsis-v"></i>
+            <i className="fas fa-ellipsis-v"></i>
           </Navbar.Toggle>
           <Navbar.Collapse>
             <Nav.Link as={Link} to="/">
