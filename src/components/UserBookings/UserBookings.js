@@ -89,7 +89,7 @@ const UserBookings = () => {
         setBookings(data);
         setLoading(false);
       });
-  }, []);
+  }, [user.email, history]);
 
   const showModal = (id) => {
     setBookingId(id);
